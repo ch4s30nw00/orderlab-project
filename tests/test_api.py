@@ -27,7 +27,6 @@ def test_not_found(client):
     assert response.status_code == 404
 
 
-
 def test_negative_price(client):
     response = client.post("/orders", json={"price": -1, "quantity": 1})
     assert response.status_code == 422
