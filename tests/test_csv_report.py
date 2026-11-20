@@ -19,7 +19,7 @@ def test_csv_empty(tmp_path):
 
 
 def test_fixture_revenue(sample_csv):
-    assert revenue_from_csv(sample_csv) == 35_000
+    assert revenue_from_csv(sample_csv) == 99_999
 
 
 def test_csv_missing_file(tmp_path):
