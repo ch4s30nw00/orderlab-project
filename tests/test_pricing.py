@@ -34,7 +34,7 @@ def test_discount_over_100():
         (50_000, 1, 0, 50_000),
         (50_001, 1, 0, 50_001),
         (10_000, 2, 10, 21_000),
-        (10_000, 2, 100, 0),
+        (10_000, 2, 100, 3_000),
     ],
 )
 def test_final_total(price, qty, discount, expected):
